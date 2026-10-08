@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "W6yDZkbPVrGo",
+        "outputId": "c32b0753-ee84-4207-ae54-1f567cac6106"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "============================================================\n",
+            "📦 CAREERPILOT-X 2.0\n",
+            "============================================================\n",
+            "✅ requirements.txt created\n",
+            "\n",
+            "📁 Location:\n",
+            "/content/CareerPilot-X-2.0/requirements.txt\n",
+            "\n",
+            "📋 Contents:\n",
+            "streamlit>=1.40,<2.0\n",
+            "requests>=2.31,<3.0\n",
+            "pandas>=2.1,<3.0\n",
+            "\n",
+            "✅ READY\n",
+            "============================================================\n"
+          ]
+        }
+      ],
+      "source": [
+        "# ============================================================\n",
+        "# 📦 CAREERPILOT-X 2.0 — REQUIREMENTS.TXT\n",
+        "# ============================================================\n",
+        "\n",
+        "import os\n",
+        "\n",
+        "PROJECT_DIR = \"/content/CareerPilot-X-2.0\"\n",
+        "os.makedirs(PROJECT_DIR, exist_ok=True)\n",
+        "\n",
+        "requirements = \"\"\"\\\n",
+        "streamlit>=1.40,<2.0\n",
+        "requests>=2.31,<3.0\n",
+        "pandas>=2.1,<3.0\n",
+        "\"\"\"\n",
+        "\n",
+        "requirements_path = os.path.join(\n",
+        "    PROJECT_DIR,\n",
+        "    \"requirements.txt\"\n",
+        ")\n",
+        "\n",
+        "with open(\n",
+        "    requirements_path,\n",
+        "    \"w\",\n",
+        "    encoding=\"utf-8\"\n",
+        ") as f:\n",
+        "    f.write(requirements)\n",
+        "\n",
+        "print(\"=\" * 60)\n",
+        "print(\"📦 CAREERPILOT-X 2.0\")\n",
+        "print(\"=\" * 60)\n",
+        "print(\"✅ requirements.txt created\")\n",
+        "print()\n",
+        "print(\"📁 Location:\")\n",
+        "print(requirements_path)\n",
+        "print()\n",
+        "print(\"📋 Contents:\")\n",
+        "print(requirements)\n",
+        "print(\"✅ READY\")\n",
+        "print(\"=\" * 60)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "su-s-VT8WZ1u"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
